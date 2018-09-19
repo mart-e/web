@@ -135,9 +135,9 @@ export function initFactory(): Function {
                 'https://notifications.bitwarden.com'; // window.location.origin + '/notifications';
         }
         await apiService.setUrls({
-            base: isDev ? null : window.location.origin,
-            api: isDev ? 'http://localhost:4000' : null,
-            identity: isDev ? 'http://localhost:33656' : null,
+            base: null,
+            api: 'https://api.bitwarden.com',
+            identity: 'https://identity.bitwarden.com',
 
             // Uncomment these (and comment out the above) if you want to target production
             // servers for local development.
